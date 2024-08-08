@@ -26,7 +26,7 @@ function App() {
       setCoreano(matchedName.coreano);
       setNameDetails(matchedName.details);
     } else {
-      setCoreano('Not found');
+      setCoreano('No se ha encontrado nada 😭');
       setNameDetails(null);
     }
   };
@@ -61,17 +61,15 @@ function App() {
         {coreano && (
           <div className='result-section text-center'>
             <h2 className='text-2xl font-bold text-gray-800 mb-4'>{coreano}</h2>
+            <p className='font-bold text-gray-800 mb-4'>
+              ({nameDetails?.pronunciacion})
+            </p>
             {nameDetails ? (
               <>
                 <p className='mb-2'>
-                  <strong>significado:</strong> {nameDetails.significado}
+                  <strong>Significado:</strong> {nameDetails.significado}
                 </p>
-                <p className='mb-2'>
-                  <strong>Pronunciacion:</strong> {nameDetails.pronunciacion}
-                </p>
-                <p>
-                  <strong>Cultural Significance:</strong> {nameDetails.cultura}
-                </p>
+                <p>{nameDetails.cultura}</p>
 
                 <a href='https://www.buymeacoffee.com/sollee'>
                   <img src='https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=sollee&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff' />
