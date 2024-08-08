@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang='es'>
       <head>
-        <meta name='keywords' content={metadata.keywords} />
+        <meta name='keywords' content={metadata.keywords as string} />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
