@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { namesData } from '@/app/lib/data';
 
 function App() {
@@ -30,6 +30,28 @@ function App() {
       setNameDetails(null);
     }
   };
+
+  useEffect(() => {
+    // Load the Twitter SDK
+    const twitterScript = document.createElement('script');
+    twitterScript.src = 'https://platform.twitter.com/widgets.js';
+    twitterScript.async = true;
+    document.body.appendChild(twitterScript);
+
+    // Manually re-render Twitter widgets when component mounts or updates
+    const renderTwitterWidgets = () => {
+      if ((window as any).twttr && (window as any).twttr.widgets) {
+        (window as any).twttr.widgets.load();
+      }
+    };
+
+    renderTwitterWidgets();
+
+    // Cleanup
+    return () => {
+      document.body.removeChild(twitterScript);
+    };
+  }, [coreano]);
 
   return (
     <div className='min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4'>
@@ -70,10 +92,24 @@ function App() {
                   <strong>Significado:</strong> {nameDetails.significado}
                 </p>
                 <p>{nameDetails.cultura}</p>
+                <div className='flex space-x-4'>
+                  {/* Facebook Share Button */}
+                  <div
+                    className='fb-share-button'
+                    data-href='https://tunombreencoreano.com'
+                    data-layout='button_count'
+                  ></div>
 
-                <a href='https://www.buymeacoffee.com/sollee'>
-                  <img src='https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=sollee&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff' />
-                </a>
+                  {/* Twitter Share Button */}
+                  <a
+                    href='https://twitter.com/share'
+                    className='twitter-share-button'
+                    data-url='https://tunombreencoreano.com'
+                    data-text={`Mi nombre coreano es ${coreano}`}
+                  >
+                    Tweet
+                  </a>
+                </div>
               </>
             ) : (
               <p className='text-red-500'>No se ha encontrado el nombre.</p>
@@ -83,12 +119,14 @@ function App() {
       </main>
 
       <footer className='w-full max-w-md mt-8 flex justify-between items-center text-gray-600'>
-        <a href='#' className='text-blue-500 hover:underline'>
+        {/* <a href='#' className='text-blue-500 hover:underline'>
           Learn more about Korean names
-        </a>
-        <button className='py-2 px-4 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors'>
-          Compartir
-        </button>
+          </a> */}
+        {coreano && (
+          <a href='https://www.buymeacoffee.com/sollee'>
+            <img src='https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=sollee&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff' />
+          </a>
+        )}
       </footer>
     </div>
   );
