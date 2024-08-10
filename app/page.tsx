@@ -49,18 +49,30 @@ function App() {
     twitterScript.async = true;
     document.body.appendChild(twitterScript);
 
-    // Manually re-render Twitter widgets when component mounts or updates
-    const renderTwitterWidgets = () => {
+    // Load the Facebook SDK
+    const facebookScript = document.createElement('script');
+    facebookScript.src =
+      'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0';
+    facebookScript.async = true;
+    document.body.appendChild(facebookScript);
+
+    // Render widgets after scripts are loaded
+    const renderWidgets = () => {
       if ((window as any).twttr && (window as any).twttr.widgets) {
         (window as any).twttr.widgets.load();
       }
+
+      if ((window as any).FB && (window as any).FB.XFBML) {
+        (window as any).FB.XFBML.parse();
+      }
     };
 
-    renderTwitterWidgets();
+    renderWidgets();
 
     // Cleanup
     return () => {
       document.body.removeChild(twitterScript);
+      document.body.removeChild(facebookScript);
     };
   }, [coreano]);
 
@@ -92,18 +104,20 @@ function App() {
         </form>
 
         {coreano && (
-          <div className='result-section text-center'>
-            <h2 className='text-2xl font-bold text-gray-800 mb-4'>{coreano}</h2>
-            <p className='font-bold text-gray-800 mb-4'>
-              ({nameDetails?.pronunciacion})
-            </p>
+          <div className='flex flex-col result-section text-center gap-3'>
+            <div className='flex items-center justify-center space-x-4 bg-gray-100 p-4 rounded-lg shadow-md'>
+              <h2 className='text-2xl font-bold text-gray-800'>{coreano}</h2>
+              <p className='font-bold text-gray-800'>
+                ({nameDetails?.pronunciacion})
+              </p>
+            </div>
             {nameDetails ? (
               <>
                 <p className='mb-2'>
                   <strong>Significado:</strong> {nameDetails.significado}
                 </p>
                 <p>{nameDetails.cultura}</p>
-                <div className='flex space-x-4'>
+                <div className='flex items-center justify-center space-x-4 bg-gray-100 p-4 rounded-lg shadow-md'>
                   {/* Facebook Share Button */}
                   <div
                     className='fb-share-button'
