@@ -15,11 +15,22 @@ function App() {
     setCastellano(e.target.value);
   };
 
+  const normalizeString = (str: string) => {
+    return str
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .toLowerCase();
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Find the matching Korean name from the data
+
+    const normalizedCastellano = normalizeString(castellano);
+
     const matchedName = namesData.nameMappings.find(
-      (name) => name.castellano.toLowerCase() === castellano.toLowerCase()
+      (name) => normalizeString(name.castellano) === normalizedCastellano
     );
 
     if (matchedName) {
