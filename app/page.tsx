@@ -36,25 +36,25 @@ function App() {
     if (matchedName) {
       setCoreano(matchedName.coreano);
       setNameDetails(matchedName.details);
-
-      try {
-        const response = await fetch('/api/submit', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ content: castellano }),
-        });
-
-        if (!response.ok) {
-          console.error('Failed to save submission');
-        }
-      } catch (error) {
-        console.error('Error submitting data:', error);
-      }
     } else {
       setCoreano('No se ha encontrado nada 😭');
       setNameDetails(null);
+    }
+
+    try {
+      const response = await fetch('/api/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ content: castellano }),
+      });
+
+      if (!response.ok) {
+        console.error('Failed to save submission');
+      }
+    } catch (error) {
+      console.error('Error submitting data:', error);
     }
   };
 
