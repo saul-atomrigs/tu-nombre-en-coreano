@@ -1,6 +1,26 @@
 export const namesData = {
   nameMappings: [
     {
+      castellano: 'Cristina',
+      coreano: '지혜',
+      details: {
+        significado: 'Sabiduría y gracia',
+        pronunciacion: 'Ji-hye',
+        cultura:
+          'Un nombre que denota inteligencia y elegancia, comúnmente utilizado en Corea por su sonido armonioso.',
+      },
+    },
+    {
+      castellano: 'Cristi',
+      coreano: '수진',
+      details: {
+        significado: 'Pureza y verdad',
+        pronunciacion: 'Soo-jin',
+        cultura:
+          'Un nombre asociado con sinceridad y belleza, popular en Corea por su sencillez y encanto.',
+      },
+    },
+    {
       castellano: 'Lucía',
       coreano: '유진',
       details: {
