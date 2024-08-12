@@ -14,6 +14,7 @@ export async function POST(request: Request) {
 
     return NextResponse.json({ submission }, { status: 200 });
   } catch (error) {
+    console.log('[api/submission] error', error);
     return NextResponse.json(
       { error: 'Failed to save submission' },
       { status: 500 }
