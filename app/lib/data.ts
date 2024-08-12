@@ -1,6 +1,26 @@
 export const namesData = {
   nameMappings: [
     {
+      castellano: 'Elea',
+      coreano: '엘레아',
+      details: {
+        significado: 'Brillante y resplandeciente',
+        pronunciacion: 'El-le-a',
+        cultura:
+          'Aunque no es común en Corea, se adapta bien y suena elegante. Es apreciado por su sonido suave y distintivo.',
+      },
+    },
+    {
+      castellano: 'Delfina',
+      coreano: '델피나',
+      details: {
+        significado: 'Dama noble del mar',
+        pronunciacion: 'Del-pi-na',
+        cultura:
+          'Aunque no es un nombre tradicional coreano, suena sofisticado y lleva connotaciones de elegancia y majestuosidad.',
+      },
+    },
+    {
       castellano: 'Cristina',
       coreano: '지혜',
       details: {
