@@ -24,7 +24,7 @@ function App() {
       .toLowerCase();
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const normalizedCastellano = normalizeString(castellano);
@@ -36,6 +36,22 @@ function App() {
     if (matchedName) {
       setCoreano(matchedName.coreano);
       setNameDetails(matchedName.details);
+
+      try {
+        const response = await fetch('/api/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ content: castellano }),
+        });
+
+        if (!response.ok) {
+          console.error('Failed to save submission');
+        }
+      } catch (error) {
+        console.error('Error submitting data:', error);
+      }
     } else {
       setCoreano('No se ha encontrado nada 😭');
       setNameDetails(null);
@@ -144,9 +160,6 @@ function App() {
       </main>
 
       <footer className='w-full max-w-md mt-8 flex justify-between items-center text-gray-600'>
-        {/* <a href='#' className='text-blue-500 hover:underline'>
-          Learn more about Korean names
-          </a> */}
         {coreano && (
           <a href='https://www.buymeacoffee.com/sollee'>
             <img src='https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=sollee&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff' />
