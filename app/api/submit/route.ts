@@ -5,11 +5,11 @@ const prisma = new PrismaClient();
 
 export async function POST(request: Request) {
   const { content } = await request.json();
-  console.log('content', content);
+  const trimmedContent = content.trim();
 
   try {
     const submission = await prisma.submission.create({
-      data: { content },
+      data: { content: trimmedContent },
     });
 
     return NextResponse.json({ submission }, { status: 200 });
