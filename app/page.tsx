@@ -160,6 +160,7 @@ function App() {
       </main>
 
       <footer className='w-full max-w-md mt-8 flex justify-between items-center text-gray-600'>
+        <p>Comprar un cafe al desarrollador:</p>
         {coreano && (
           <a href='https://www.buymeacoffee.com/sollee'>
             <img src='https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=sollee&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff' />
