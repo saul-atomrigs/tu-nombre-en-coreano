@@ -1,6 +1,156 @@
 export const namesData = {
   nameMappings: [
     {
+      castellano: 'Antonia',
+      coreano: '수아',
+      details: {
+        significado: 'Elegante y amable',
+        pronunciacion: 'Soo-ah',
+        cultura:
+          'Un nombre suave y elegante, que refleja características de amabilidad y gracia, popular en Corea por su sonido armonioso.',
+      },
+    },
+    {
+      castellano: 'Bruno',
+      coreano: '준호',
+      details: {
+        significado: 'Brillante y protector',
+        pronunciacion: 'Jun-ho',
+        cultura:
+          'Un nombre fuerte y respetado, asociado con el liderazgo y una naturaleza protectora.',
+      },
+    },
+    {
+      castellano: 'Benjamin',
+      coreano: '지민',
+      details: {
+        significado: 'Sabio y leal',
+        pronunciacion: 'Ji-min',
+        cultura:
+          'Un nombre que denota sabiduría y lealtad, valorado en Corea por su significado positivo y su popularidad.',
+      },
+    },
+    {
+      castellano: 'Valencia',
+      coreano: '다혜',
+      details: {
+        significado: 'Gran talento y inteligencia',
+        pronunciacion: 'Da-hye',
+        cultura:
+          'Un nombre que evoca inteligencia y habilidad, apreciado por su sonoridad moderna y significativa en Corea.',
+      },
+    },
+    {
+      castellano: 'Agustina',
+      coreano: '수진',
+      details: {
+        significado: 'Pura y auténtica',
+        pronunciacion: 'Soo-jin',
+        cultura:
+          'Un nombre femenino muy popular en Corea, asociado con la pureza y la sinceridad.',
+      },
+    },
+    {
+      castellano: 'Simona',
+      coreano: '서연',
+      details: {
+        significado: 'Graciosa y talentosa',
+        pronunciacion: 'Seo-yeon',
+        cultura:
+          'Un nombre elegante que transmite gracia y talento, comúnmente utilizado en Corea.',
+      },
+    },
+    {
+      castellano: 'Amanda',
+      coreano: '민지',
+      details: {
+        significado: 'Inteligente y amorosa',
+        pronunciacion: 'Min-ji',
+        cultura:
+          'Un nombre popular que simboliza inteligencia y afecto, con un tono cálido y acogedor.',
+      },
+    },
+    {
+      castellano: 'Karla',
+      coreano: '가을',
+      details: {
+        significado: 'Otoño',
+        pronunciacion: 'Ga-eul',
+        cultura:
+          'Un nombre poético que simboliza madurez, serenidad y belleza, utilizado en Corea por su conexión con la naturaleza.',
+      },
+    },
+    {
+      castellano: 'Charlot',
+      coreano: '지유',
+      details: {
+        significado: 'Libre y sabio',
+        pronunciacion: 'Ji-yoo',
+        cultura:
+          'Un nombre que denota libertad y sabiduría, con un significado positivo y atractivo en la cultura coreana.',
+      },
+    },
+    {
+      castellano: 'Alexis',
+      coreano: '현우',
+      details: {
+        significado: 'Sabio y protector',
+        pronunciacion: 'Hyun-woo',
+        cultura:
+          'Un nombre masculino fuerte y protector, popular por su resonancia positiva y liderazgo en Corea.',
+      },
+    },
+    {
+      castellano: 'Iris',
+      coreano: '하린',
+      details: {
+        significado: 'Pura y radiante',
+        pronunciacion: 'Ha-rin',
+        cultura:
+          'Un nombre moderno y femenino, asociado con la pureza y la luminosidad, comúnmente utilizado en Corea.',
+      },
+    },
+    {
+      castellano: 'Ingrid',
+      coreano: '인혜',
+      details: {
+        significado: 'Sabia y benevolente',
+        pronunciacion: 'In-hye',
+        cultura:
+          'Un nombre que evoca sabiduría y bondad, apreciado en Corea por su significado profundo y su sonido suave.',
+      },
+    },
+    {
+      castellano: 'Noel',
+      coreano: '노아',
+      details: {
+        significado: 'Paz y confort',
+        pronunciacion: 'No-ah',
+        cultura:
+          'Un nombre que transmite serenidad y paz, utilizado tanto para niños como para niñas en Corea.',
+      },
+    },
+    {
+      castellano: 'Tomas',
+      coreano: '태민',
+      details: {
+        significado: 'Gran protector',
+        pronunciacion: 'Tae-min',
+        cultura:
+          'Un nombre masculino que refleja fortaleza y protección, comúnmente utilizado por su resonancia positiva.',
+      },
+    },
+    {
+      castellano: 'Maribel',
+      coreano: '수빈',
+      details: {
+        significado: 'Brillante y hermosa',
+        pronunciacion: 'Soo-bin',
+        cultura:
+          'Un nombre femenino que denota belleza y claridad, popular en Corea por su elegancia y dulzura.',
+      },
+    },
+    {
       castellano: 'Karla',
       coreano: '가을',
       details: {
