@@ -1,6 +1,16 @@
 export const namesData = {
   nameMappings: [
     {
+      castellano: 'Karla',
+      coreano: '가을',
+      details: {
+        significado: 'Otoño',
+        pronunciacion: 'Ga-eul',
+        cultura:
+          'Un nombre poético que simboliza madurez, serenidad y belleza. Es un nombre popular en Corea por su vínculo con la naturaleza.',
+      },
+    },
+    {
       castellano: 'Elea',
       coreano: '엘레아',
       details: {
