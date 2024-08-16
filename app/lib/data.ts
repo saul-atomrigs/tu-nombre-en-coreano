@@ -1,6 +1,236 @@
 export const namesData = {
   nameMappings: [
     {
+      castellano: 'Bianca',
+      coreano: '하영',
+      details: {
+        significado: 'Brillante y pura',
+        pronunciacion: 'Ha-young',
+        cultura:
+          'Un nombre que evoca claridad y pureza, popular en Corea por su sonido suave y su significado positivo.',
+      },
+    },
+    {
+      castellano: 'Monica',
+      coreano: '다은',
+      details: {
+        significado: 'Amable y compasiva',
+        pronunciacion: 'Da-eun',
+        cultura:
+          'Un nombre moderno y cálido, asociado con la amabilidad y la empatía.',
+      },
+    },
+    {
+      castellano: 'Giovana',
+      coreano: '지연',
+      details: {
+        significado: 'Graciosa y reflexiva',
+        pronunciacion: 'Ji-yeon',
+        cultura:
+          'Un nombre elegante y femenino, muy utilizado en Corea por su significado profundo y resonante.',
+      },
+    },
+    {
+      castellano: 'Jonathan',
+      coreano: '재현',
+      details: {
+        significado: 'Dios ha dado',
+        pronunciacion: 'Jae-hyun',
+        cultura:
+          'Un nombre tradicionalmente valorado por su asociación con la fe y la espiritualidad.',
+      },
+    },
+    {
+      castellano: 'Jacinta',
+      coreano: '지혜',
+      details: {
+        significado: 'Sabiduría',
+        pronunciacion: 'Ji-hye',
+        cultura:
+          'Un nombre femenino muy popular en Corea, asociado con la inteligencia y la perspicacia.',
+      },
+    },
+    {
+      castellano: 'Lidia',
+      coreano: '하늘',
+      details: {
+        significado: 'Cielo y libertad',
+        pronunciacion: 'Ha-neul',
+        cultura:
+          'Un nombre poético que evoca la inmensidad del cielo, comúnmente utilizado en Corea por su belleza y significado.',
+      },
+    },
+    {
+      castellano: 'Jennifer',
+      coreano: '지수',
+      details: {
+        significado: 'Sabiduría y talento',
+        pronunciacion: 'Ji-soo',
+        cultura:
+          'Un nombre moderno y femenino que representa inteligencia y habilidad, popular en Corea por su resonancia suave.',
+      },
+    },
+    {
+      castellano: 'Daliana',
+      coreano: '다현',
+      details: {
+        significado: 'Gracia y dulzura',
+        pronunciacion: 'Da-hyun',
+        cultura:
+          'Un nombre moderno y elegante, apreciado por su significado positivo y su sonido armonioso en Corea.',
+      },
+    },
+    {
+      castellano: 'Adan',
+      coreano: '현우',
+      details: {
+        significado: 'Sabio y protector',
+        pronunciacion: 'Hyun-woo',
+        cultura:
+          'Un nombre masculino fuerte que simboliza protección y liderazgo, común en Corea por su sonido y significado.',
+      },
+    },
+    {
+      castellano: 'Paola',
+      coreano: '보라',
+      details: {
+        significado: 'Púrpura y noble',
+        pronunciacion: 'Bo-ra',
+        cultura:
+          'Un nombre que denota elegancia y nobleza, asociado con el color púrpura, valorado en Corea por su sonido dulce y su significado.',
+      },
+    },
+    {
+      castellano: 'Marisol',
+      coreano: '선영',
+      details: {
+        significado: 'Brillante como el sol',
+        pronunciacion: 'Sun-young',
+        cultura:
+          'Un nombre cálido y positivo, asociado con la luz y la calidez, popular por su resonancia alegre en Corea.',
+      },
+    },
+    {
+      castellano: 'Araceli',
+      coreano: '아라',
+      details: {
+        significado: 'Celestial',
+        pronunciacion: 'Ara',
+        cultura:
+          'Un nombre poético que evoca lo celestial y lo divino, utilizado en Corea por su sonido único y su significado elevado.',
+      },
+    },
+    {
+      castellano: 'Sonia',
+      coreano: '소희',
+      details: {
+        significado: 'Pequeña y amable',
+        pronunciacion: 'So-hee',
+        cultura:
+          'Un nombre femenino suave y dulce, que denota amabilidad y belleza interior, común en Corea por su sonido armonioso.',
+      },
+    },
+    {
+      castellano: 'Agatha',
+      coreano: '혜진',
+      details: {
+        significado: 'Brillante y prudente',
+        pronunciacion: 'Hye-jin',
+        cultura:
+          'Un nombre que refleja sabiduría y claridad, popular en Corea por su significado profundo y resonancia elegante.',
+      },
+    },
+    {
+      castellano: 'Lucia',
+      coreano: '유진',
+      details: {
+        significado: 'Preciosa y genuina',
+        pronunciacion: 'Yoo-jin',
+        cultura:
+          'Un nombre popular y versátil, a menudo asociado con la pureza y la bondad.',
+      },
+    },
+    {
+      castellano: 'Magdalena',
+      coreano: '민정',
+      details: {
+        significado: 'Virtuosa y respetable',
+        pronunciacion: 'Min-jung',
+        cultura:
+          'Un nombre femenino tradicional que simboliza virtud y respeto, popular en Corea por su resonancia respetable.',
+      },
+    },
+    {
+      castellano: 'Felix',
+      coreano: '승민',
+      details: {
+        significado: 'Éxito y virtud',
+        pronunciacion: 'Seung-min',
+        cultura:
+          'Un nombre masculino que evoca éxito y virtud, comúnmente valorado en Corea por su significado positivo y su sonido fuerte.',
+      },
+    },
+    {
+      castellano: 'Esteban',
+      coreano: '태현',
+      details: {
+        significado: 'Sabio y noble',
+        pronunciacion: 'Tae-hyun',
+        cultura:
+          'Un nombre masculino que denota sabiduría y nobleza, apreciado por su resonancia fuerte y significativa en Corea.',
+      },
+    },
+    {
+      castellano: 'Nadia',
+      coreano: '나래',
+      details: {
+        significado: 'Alas',
+        pronunciacion: 'Na-rae',
+        cultura:
+          'Un nombre poético que evoca libertad y ligereza, utilizado en Corea por su sonido suave y su significado profundo.',
+      },
+    },
+    {
+      castellano: 'Enrique',
+      coreano: '현준',
+      details: {
+        significado: 'Sabio y talentoso',
+        pronunciacion: 'Hyun-joon',
+        cultura:
+          'Un nombre masculino respetado, asociado con la sabiduría y el talento, valorado en Corea por su resonancia fuerte y positiva.',
+      },
+    },
+    {
+      castellano: 'Susana',
+      coreano: '수아',
+      details: {
+        significado: 'Elegante y amable',
+        pronunciacion: 'Soo-ah',
+        cultura:
+          'Un nombre suave y elegante, que refleja características de amabilidad y gracia, popular en Corea por su sonido armonioso.',
+      },
+    },
+    {
+      castellano: 'Rodolfo',
+      coreano: '도윤',
+      details: {
+        significado: 'Sabio y fuerte',
+        pronunciacion: 'Do-yoon',
+        cultura:
+          'Un nombre masculino que refleja fuerza y sabiduría, apreciado en Corea por su resonancia positiva y su significado fuerte.',
+      },
+    },
+    {
+      castellano: 'Cesar',
+      coreano: '세진',
+      details: {
+        significado: 'Gran y sabio',
+        pronunciacion: 'Se-jin',
+        cultura:
+          'Un nombre masculino asociado con grandeza y sabiduría, comúnmente utilizado en Corea por su significado y resonancia.',
+      },
+    },
+    {
       castellano: 'Antonia',
       coreano: '수아',
       details: {
