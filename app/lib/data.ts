@@ -1,6 +1,26 @@
 export const namesData = {
   nameMappings: [
     {
+      castellano: 'Juana',
+      coreano: '하나',
+      details: {
+        significado: 'Única y preciosa',
+        pronunciacion: 'Ha-na',
+        cultura:
+          'Un nombre común en Corea, que significa "una" o "única", utilizado por su simplicidad y belleza.',
+      },
+    },
+    {
+      castellano: 'Angelica',
+      coreano: '은비',
+      details: {
+        significado: 'Graciosa y elegante',
+        pronunciacion: 'Eun-bi',
+        cultura:
+          'Un nombre popular en Corea, asociado con la gracia y la elegancia, evocando una imagen suave y refinada.',
+      },
+    },
+    {
       castellano: 'Bianca',
       coreano: '하영',
       details: {
