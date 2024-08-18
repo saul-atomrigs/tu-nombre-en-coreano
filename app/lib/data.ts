@@ -1,6 +1,36 @@
 export const namesData = {
   nameMappings: [
     {
+      castellano: 'Lourdes',
+      coreano: '유리',
+      details: {
+        significado: 'Cristalina y pura',
+        pronunciacion: 'Yoo-ri',
+        cultura:
+          'Un nombre femenino que evoca claridad y pureza, comúnmente utilizado en Corea por su sonido elegante y significado positivo.',
+      },
+    },
+    {
+      castellano: 'Elizabeth',
+      coreano: '지현',
+      details: {
+        significado: 'Promesa de Dios',
+        pronunciacion: 'Ji-hyun',
+        cultura:
+          'Un nombre femenino que denota sabiduría y gracia, valorado en Corea por su resonancia fuerte y su significado profundo.',
+      },
+    },
+    {
+      castellano: 'Silvio',
+      coreano: '시우',
+      details: {
+        significado: 'Noble y fuerte',
+        pronunciacion: 'Si-woo',
+        cultura:
+          'Un nombre masculino moderno que simboliza fortaleza y nobleza, popular en Corea por su sonido moderno y significado poderoso.',
+      },
+    },
+    {
       castellano: 'Saray',
       coreano: '세라',
       details: {
