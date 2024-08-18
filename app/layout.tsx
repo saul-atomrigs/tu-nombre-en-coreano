@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import GoogleAnalytics from './lib/GoogleAnalytics';
+import GoogleAdsense from './lib/GoogleAdsense';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang='es'>
       <head>
         <meta name='keywords' content={metadata.keywords as string} />
+        <GoogleAdsense />
       </head>
       <body className={inter.className}>
         {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
