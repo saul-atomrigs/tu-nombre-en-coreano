@@ -1,6 +1,36 @@
 export const namesData = {
   nameMappings: [
     {
+      castellano: 'Saray',
+      coreano: '세라',
+      details: {
+        significado: 'Princesa y pura',
+        pronunciacion: 'Se-ra',
+        cultura:
+          'Un nombre que suena similar a "Sara," común en Corea y asociado con pureza y nobleza.',
+      },
+    },
+    {
+      castellano: 'Franchesca',
+      coreano: '수진',
+      details: {
+        significado: 'Graciosa y noble',
+        pronunciacion: 'Soo-jin',
+        cultura:
+          'Un nombre femenino que refleja nobleza y gracia, popular en Corea por su sonido sofisticado y significado positivo.',
+      },
+    },
+    {
+      castellano: 'Melanie',
+      coreano: '민서',
+      details: {
+        significado: 'Gentil y refinada',
+        pronunciacion: 'Min-seo',
+        cultura:
+          'Un nombre elegante y moderno, apreciado en Corea por su resonancia suave y su significado delicado.',
+      },
+    },
+    {
       castellano: 'Juana',
       coreano: '하나',
       details: {
