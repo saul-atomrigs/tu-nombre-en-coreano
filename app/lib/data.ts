@@ -1,6 +1,36 @@
 export const namesData = {
   nameMappings: [
     {
+      castellano: 'Selena',
+      coreano: '세나',
+      details: {
+        significado: 'Luna y brillo',
+        pronunciacion: 'Se-na',
+        cultura:
+          'Un nombre femenino suave y elegante, que evoca la luna y su brillo, popular en Corea por su sonido armonioso.',
+      },
+    },
+    {
+      castellano: 'Dafne',
+      coreano: '다혜',
+      details: {
+        significado: 'Virtuosa y talentosa',
+        pronunciacion: 'Da-hye',
+        cultura:
+          'Un nombre moderno y femenino que denota talento y virtud, valorado en Corea por su resonancia suave y su significado positivo.',
+      },
+    },
+    {
+      castellano: 'Mariana',
+      coreano: '민아',
+      details: {
+        significado: 'Graciosa y refinada',
+        pronunciacion: 'Min-a',
+        cultura:
+          'Un nombre popular en Corea que transmite elegancia y gracia, apreciado por su sonido dulce y su significado delicado.',
+      },
+    },
+    {
       castellano: 'Lourdes',
       coreano: '유리',
       details: {
