@@ -1,6 +1,26 @@
 export const namesData = {
   nameMappings: [
     {
+      castellano: 'Rene',
+      coreano: '현우',
+      details: {
+        significado: 'Sabio y protector',
+        pronunciacion: 'Hyun-woo',
+        cultura:
+          'Un nombre masculino que refleja sabiduría y protección, popular en Corea por su resonancia fuerte y su significado positivo.',
+      },
+    },
+    {
+      castellano: 'Cristian',
+      coreano: '준호',
+      details: {
+        significado: 'Noble y brillante',
+        pronunciacion: 'Joon-ho',
+        cultura:
+          'Un nombre masculino común en Corea, que simboliza nobleza y brillantez, apreciado por su sonido fuerte y significado elevado.',
+      },
+    },
+    {
       castellano: 'Morena',
       coreano: '민서',
       details: {
