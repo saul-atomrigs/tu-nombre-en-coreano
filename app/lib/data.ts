@@ -1,6 +1,36 @@
 export const namesData = {
   nameMappings: [
     {
+      castellano: 'Morena',
+      coreano: '민서',
+      details: {
+        significado: 'Gentil y refinada',
+        pronunciacion: 'Min-seo',
+        cultura:
+          'Un nombre que evoca sofisticación y elegancia, popular en Corea por su sonido suave y significado positivo.',
+      },
+    },
+    {
+      castellano: 'Nahiara',
+      coreano: '나희',
+      details: {
+        significado: 'Serenidad y armonía',
+        pronunciacion: 'Na-hee',
+        cultura:
+          'Un nombre femenino que transmite paz y serenidad, utilizado en Corea por su resonancia calmante y significado armonioso.',
+      },
+    },
+    {
+      castellano: 'Lucena',
+      coreano: '루나',
+      details: {
+        significado: 'Luz y claridad',
+        pronunciacion: 'Roo-na',
+        cultura:
+          'Un nombre poético que evoca la luz y la claridad, popular en Corea por su conexión con la belleza y la luminosidad.',
+      },
+    },
+    {
       castellano: 'Selena',
       coreano: '세나',
       details: {
